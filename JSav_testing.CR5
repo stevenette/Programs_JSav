@@ -1122,6 +1122,8 @@ BeginProg
 
   SlowSequence
 
+'Changed from 5 seconds, to 30 min, now changing to 5 min and will check up on 
+'If it significantly changes the power. 
 	Scan (5,Min,3,0)
 		'Turn on the AM16/32.
 
