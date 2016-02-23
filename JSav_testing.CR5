@@ -870,7 +870,8 @@ BeginProg
    	VoltDiff (AirTC(2),1,mV5000,7,TRUE,200,250,0.1,-40)
 		VoltDiff (RH(2),1,mV1000,8,TRUE,200,250,0.001,0)
 		'If RH(2)>1.00 AND RH(2)<1.08 Then RH(2)=1.00
-		
+	
+'Placed 2 if statements into 1 for loop because RH(2) was recording values between 1.0 and 1.08.  	
 		 For i =1 To 2
       If (RH(i)>1.00) AND (RH(i)<1.08) Then RH(i)=1.00
     Next
